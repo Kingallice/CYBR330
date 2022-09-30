@@ -1,7 +1,7 @@
-from inspect import stack
+from tkinter.messagebox import QUESTION
 from ArrayStack import ArrayStack
 from ArrayQueue import ArrayQueue
-
+from DoubleEndedQueue import DoubleEndedQueue
 
 stack = ArrayStack()
 
@@ -28,7 +28,5 @@ def findElement(S, x):
     return found
 
 print(stack.toString())
-
 print(findElement(stack, 2))
-
 print(stack.toString())
