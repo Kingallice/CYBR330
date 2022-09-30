@@ -22,3 +22,9 @@ class ArrayStack:
         if self.is_empty():
             raise Empty('Stack is empty')
         return self._data.pop()
+
+    def toString(self):
+        out = []
+        for x in self._data.copy():
+            out.append(x)
+        return out
