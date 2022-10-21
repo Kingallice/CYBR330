@@ -128,7 +128,7 @@ class LinkedBinaryTree(BinaryTree):
         node = self._validate(p)
         return self._make_position(node._right)
     
-    def hanum_children(self, p):
+    def num_children(self, p):
         node = self._validate(p)
         count = 0
         if node._left is not None:
