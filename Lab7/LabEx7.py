@@ -21,3 +21,5 @@ print("\nPosition of 4:", pList.find(4),
 
 print("\nOriginal:",[x for x in pList],"\nReversed:", [x for x in reversed(pList)])
 #    print(x)
+
+print([x*x for x in range(100)])
