@@ -7,7 +7,7 @@ PQ1 = UnsortedPriorityQueue()
 PQ2 = SortedPriorityQueue()
 
 BASENUM = 1000  #Number of Random Numbers to add
-MAXRAND = 500   #Largest random int to add
+MAXRAND = 1000000   #Largest random int to add
 
 for i in range(BASENUM):
     x = randint(0, MAXRAND)
