@@ -169,7 +169,7 @@ class PriorityQueueBase:
 
         def __init__(self, k, v):
             self._key = k
-            self._key = v
+            self._value = v
         
         def __lt__(self, other):
             return self._key < other._key
