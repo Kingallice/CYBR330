@@ -72,3 +72,11 @@ class HeapPriorityQueue(PriorityQueueBase):
         item = self._data.pop()
         self._downheap(0)
         return (item._key, item._value)
+
+    def __str__(self):
+        list = []
+        while not self.is_empty():
+            list.append(self.remove_min())
+        for x in list:
+            self.add(x[0], x[1])
+        return str(list)
