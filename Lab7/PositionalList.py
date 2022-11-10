@@ -148,12 +148,12 @@ class PositionalList(_DoublyLinkedBase):
 
     #B
     def find(self, e):
-        """Returns the Position of the (first occurrence of) element e in the list (or returns None if not found)"""
+        """Returns a tuple of (Position, index) of the (first occurrence of) element e in the list (or returns (Position(None), None) tuple if not found)"""
         pos = 0
         cursor = self.first()
         while cursor is not None:
             if e == cursor.element():
-                return pos
+                return (cursor, pos)
             cursor = self.after(cursor)
             pos += 1
-        return None
+        return (self.Position(None, self._Node(None, None, None)), None)

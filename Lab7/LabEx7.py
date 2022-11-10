@@ -15,8 +15,8 @@ def pListMax(list):
 
 print("Max Element:", pListMax(pList))
 
-print("\nPosition of 4:", pList.find(4),
-"\nPosition of 'Hello':", pList.find("Hello"))
+print("\nPosition of 4:", pList.find(4)[1],
+"\nPosition of 'Hello':", pList.find("Hello")[1])
 
 
 print("\nOriginal:",[x for x in pList],"\nReversed:", [x for x in reversed(pList)])
