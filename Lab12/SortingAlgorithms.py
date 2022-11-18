@@ -49,7 +49,7 @@ def quick_sort(S, a = None, b = None):
 def heapify(S, n, i):
     largest = i
     left = 2 * i + 1
-    right = 2 * i + 1
+    right = 2 * i + 2
 
     if left < n and S[i] < S[left]:
         largest = left
@@ -58,8 +58,7 @@ def heapify(S, n, i):
         largest = right
 
     if largest != i:
-        (S[i], S[largest]) = (S[largest], S[i])
-
+        S[i], S[largest] = S[largest], S[i]
         heapify(S, n, largest)
 
 def heap_sort(S):
@@ -69,7 +68,7 @@ def heap_sort(S):
         heapify(S, n, i)
     
     for i in range(n - 1, 0, -1):
-        (S[i], S[0]) = (S[0], S[i])
+        S[i], S[0] = S[0], S[i]
         heapify(S, i, 0)
 
 #Merge Sort
